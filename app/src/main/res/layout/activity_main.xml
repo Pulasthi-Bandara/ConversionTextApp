@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtDecimal"
+        android:layout_width="83dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="36dp"
+        android:text="Decimal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnConversion"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:onClick="binaryConverter"
+        android:text="Convert to binary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtNumber"
+        android:layout_width="202dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter Decimal number"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/txtDecimal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAnwser"
+        android:layout_width="319dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="256dp"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHexadecimal"
+        android:layout_width="212dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:onClick="hexadecimalConverter"
+        android:text="Convert to Hexadecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConversion" />
+</androidx.constraintlayout.widget.ConstraintLayout>
